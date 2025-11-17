@@ -67,6 +67,13 @@ header {
     padding: 0.5rem;
 }
 
+.logo {
+    width: 50px;
+    height: auto;
+    max-width: 50px;
+    object-fit: contain;
+}
+
 .nav-container h1 {
     font-size: 1.2rem;
 }
@@ -120,49 +127,79 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-color: #e8eaf6; /* Light purple background */
+    background-image: url('hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 4rem 1rem;
     text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+    z-index: 1;
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #4a148c; /* Match logo color */
 }
 
 .hero h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    color: #4a148c; /* Match logo color */
+}
+
+.hero p {
+    color: #333;
 }
 
 .hero img {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    margin-top: 2rem;
+    display: none; /* Hide the img tag since we're using background */
 }
 
 /* About Section */
 .about {
+    background-color: #f3e5f5; /* Light purple background matching logo colors */
     padding: 4rem 1rem;
     text-align: center;
-    background-color: white;
+    position: relative;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.about p {
+    color: #333;
 }
 
 .about img {
     width: 100%;
     max-width: 800px;
     height: auto;
+    border-radius: 15px; /* Rounded edges */
+    margin-top: 2rem;
+    display: block;
 }
 
 /* Services Section */
@@ -196,6 +233,8 @@ nav ul li a {
     width: 100%;
     max-width: 600px;
     height: auto;
+    border-radius: 15px; /* Rounded edges */
+    margin-top: 1rem;
 }
 
 /* Why Us Section */
@@ -231,6 +270,9 @@ nav ul li a {
     width: 100%;
     max-width: 800px;
     height: auto;
+    border-radius: 15px; /* Rounded edges */
+    margin-top: 2rem;
+    display: block;
 }
 
 /* Footer */
