@@ -1,0 +1,1 @@
+- [x] Add line break in hero h1 after "مكتبنا" for better readability on smaller screens
