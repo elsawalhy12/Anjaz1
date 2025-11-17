@@ -6,6 +6,7 @@
     <title>مكتب الخدمات العامة والتعقيب</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
             <div class="nav-container">
                 <img src="https://drive.google.com/uc?export=view&id=1RTKXIk5vU3XeCBahFubl7KBepPcU_Jnr" alt="Logo" class="logo">
                 <h1>مكتب الخدمات العامة</h1>
-                <ul>
+                <ul id="nav-menu">
                     <li><a href="#home">الرئيسية</a></li>
                     <li><a href="#about">من نحن</a></li>
                     <li><a href="#services">الخدمات</a></li>
@@ -23,13 +24,18 @@
                     <p>📞 +966 59 199 5710</p>
                     <p>📧 info@example.com</p>
                 </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>⚡ مرحبًا بكم في مكتبنا للخدمات العامة والتعقيب ⚡</h1>
+            <h1>⚡ مرحبًا بكم في مكتبنا<br> للخدمات العامة والتعقيب ⚡</h1>
             <h2>وجهتكم الأولى لإنجاز معاملاتكم الحكومية بكل سهولة وسرعة ✨</h2>
             <p>نحن نوفر حلول متكاملة للأفراد والشركات، ونلتزم بالدقة والموثوقية وتسليم المعاملات في الوقت المحدد. نسعى لأن نكون الخيار الأول في مجال الخدمات العامة، من خلال تقديم خدمات احترافية تعتمد على الجودة والشفافية وتحقيق رضا العميل.</p>
             <a href="https://wa.me/966591995710" class="cta-button">احجز الآن</a>
